@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite tests="3" failures="0" time="0.036" name="CICD-poc">
+		<properties>
+			<property name="go.version" value="go1.12.1"></property>
+		</properties>
+		<testcase classname="CICD-poc" name="TestExample02_Init" time="0.000"></testcase>
+		<testcase classname="CICD-poc" name="TestExample02_Query" time="0.000"></testcase>
+		<testcase classname="CICD-poc" name="TestExample02_Invoke" time="0.000"></testcase>
+	</testsuite>
+</testsuites>
