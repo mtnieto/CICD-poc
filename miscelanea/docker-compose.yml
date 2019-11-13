@@ -15,6 +15,17 @@ services:
       - db-poc-sonarqube_data:/opt/sonarqube/data
       - db-poc-sonarqube_extensions:/opt/sonarqube/extensions
       - db-poc-sonarqube_bundled-plugins:/opt/sonarqube/lib/bundled-plugins
+  jenkins:
+    image: 'bitnami/jenkins:2'
+    environment: 
+      - JENKINS_USERNAME=admin
+      - JENKINS_PASSWORD=admin
+    ports:
+      - 8080:8080
+      - 443:8443
+      - 50000:50000
+    volumes:
+      - 'jenkins_data:/bitnami'
 
   db-poc:
     image: postgres
@@ -41,3 +52,5 @@ volumes:
   db-poc-sonarqube_bundled-plugins:
   db-poc-sonarqube_psql:
   db-poc-sonarqube_psql_data:
+  jenkins_data:
+    driver: local
