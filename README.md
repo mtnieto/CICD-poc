@@ -1,5 +1,7 @@
 # Sonar analysis in chaincodes
 
+
+
 ## Prerequistes:
 
 - Sonar-scanner installed in the host machine (in MacOS you can install it with brew)
@@ -40,7 +42,7 @@ If you execute the following command, you will execute the past steps in one com
 make test
 ```
 
-
+![alt text](sonar-image.png)
 
 The following repository is an example https://github.com/remast/service_sonar
 
